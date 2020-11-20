@@ -15,6 +15,7 @@ module.exports = {
                 "Absolutely",
                 "Not in a million years",
                 "Not Sure",
+                "Try Again",
             ];
             let response =
                 responses[Math.floor(Math.random() * responses.length - 1)];
