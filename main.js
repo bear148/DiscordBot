@@ -42,6 +42,8 @@ client.on('message', message => {
         client.commands.get('avatar').run(client, message, args);
     } else if (command == 'meme') {
         client.commands.get('meme').run(client, message, args);
+    } else if (command == 'say') {
+        client.commands.get('say').run(client, message, args);
     }
 });
 
