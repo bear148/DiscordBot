@@ -19,6 +19,7 @@ module.exports = {
                 "OH HELL NAWW",
                 "bruh",
                 "xd",
+                "*inhale*",
             ];
             let response =
                 responses[Math.floor(Math.random() * responses.length - 1)];
