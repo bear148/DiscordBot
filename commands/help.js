@@ -13,7 +13,8 @@ module.exports = {
             {name: '-github', value: "Creator's github"},
             {name: '-ping', value: 'Test command'},
             {name: "-8ball", value: 'Simple 8Ball I coded.'},
-            {name: '-avatar', value: 'This is a simple command that tells roles, join date, and id.'}
+            {name: '-avatar', value: 'This is a simple command that tells roles, join date, and id.'},
+            {name: '-meme', value: "Simple command that grabs memes from subreddits like r/memes."}
         )
         .setFooter('This bot was coded by Michael Srenaski © 2020');
         message.channel.send(newEmbed)
