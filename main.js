@@ -44,6 +44,8 @@ client.on('message', message => {
         client.commands.get('meme').run(client, message, args);
     } else if (command == 'say') {
         client.commands.get('say').run(client, message, args);
+    } else if (command == 'giveaway') {
+        client.commands.get('giveaway').run(client, message, args);
     }
 });
 
