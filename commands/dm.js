@@ -16,6 +16,6 @@ module.exports = {
         user.user
             .send(args.slice(1).join(" "))
             .catch(() => message.channel.send("That user could not be DMed."))
-            .then(() => message.channel.send(`Sent message tp ${user.user.tag}`));
+            .then(() => message.channel.send(`Sent message to ${user.user.tag}`));
     },
 };
