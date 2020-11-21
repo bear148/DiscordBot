@@ -46,6 +46,8 @@ client.on('message', message => {
         client.commands.get('say').run(client, message, args);
     } else if (command == 'giveaway') {
         client.commands.get('giveaway').run(client, message, args);
+    } else if (command == 'dm') {
+        client.commands.get('dm').run(client, message, args);
     }
 });
 
