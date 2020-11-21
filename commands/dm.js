@@ -1,7 +1,7 @@
 module.exports = {
     name: "dm",
     description: "DM a guild member!",
-    run: async (client, message, user) => {
+    run: async (client, message, args) => {
         if(!message.member.permissions.has("MANAGE_MESSAGES"))
             return message.channel.send("You don't have enough permissions.");
         let user =
