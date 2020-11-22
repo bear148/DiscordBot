@@ -50,6 +50,8 @@ client.on('message', message => {
         client.commands.get('dm').run(client, message, args);
     } else if (command == 'poll') {
         client.commands.get('poll').run(client, message, args);
+    } else if (command == 'reddit') {
+        client.commands.get('reddit').run(client, message, args);
     }
 });
 

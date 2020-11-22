@@ -20,6 +20,18 @@ module.exports = {
                 "bruh",
                 "xd",
                 "*inhale*",
+                "Milo",
+                "Michael is the best",
+                "Roku did that yesterday",
+                "No, but Ian does.",
+                "Roku loves it.",
+                "Collin",
+                "No, but Ian does.",
+                "No, but Roku does.",
+                "No, but Milo does.",
+                "No, but Michael does.",
+                "No, but Collin does.",
+                "",
             ];
             let response =
                 responses[Math.floor(Math.random() * responses.length - 1)];

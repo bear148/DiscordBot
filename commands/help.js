@@ -17,7 +17,8 @@ module.exports = {
             {name: '-meme', value: "Simple command that grabs memes from subreddits like r/memes."},
             {name: '-giveaway', value: "Simple command that creates giveaways, '-giveaway <time> <channel> <prize>"},
             {name: '-dm', value: "Simple command that dms users, '-dm <user> <message>"},
-            {name: '-poll', value: "Simple command that creates polls, '-poll <channel> <poll question>"}
+            {name: '-poll', value: "Simple command that creates polls, '-poll <channel> <poll question>"},
+            {name: '-reddit', value: "Simple command that grabs random images from selected subreddit, '-reddit <subreddit>"}
         )
         .setFooter('This bot was coded by Michael Srenaski © 2020');
         message.channel.send(newEmbed)
