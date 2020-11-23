@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const { MessageEmbed } = require("discord.js");
-const { formatDate } = require("C:\\Users\\shane\\Desktop\\Programming Projects and stuff\\DiscordBot");
+const { formatDate } = require("C:\\Users\\shane\\Desktop\\Programming Projects and stuff\\DiscordBot\\functions.js");
 module.exports = {
     name: "avatar",
     description: "Get your own, or someone elses avatar",

@@ -3,6 +3,7 @@ const { token } = require('./config.json');
 const client = new Discord.Client();
 const fs = require('fs');
 const prefix = '-';
+const welcome = require('./welcome')
 
 client.commands = new Discord.Collection();
 
@@ -13,16 +14,21 @@ for(const file of commandFiles){
     client.commands.set(command.name, command)
 }
 
+client.on('ready', () => {
+    console.log("Client Ready!")
+})
 
 client.once('ready', () => {
     console.log('Michaels Bot is online!');
     client.user.setActivity("Getting Developed", { type: 'LISTENING'}).catch(console.error);
+    welcome(client)
 });
 
 client.on('message', message => {
+
     if(!message.content.startsWith(prefix) || message.author.bot) return;
-    if(message.mentions.has(client.user)) {
-       message.channel.send('The prefix is ' + prefix);
+    if(message.content === "<@778830825113387028>") {
+       return message.channel.send('The prefix is ' + prefix)
     };
 
     const args = message.content.slice(prefix.length).split(/ +/);
