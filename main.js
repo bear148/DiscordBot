@@ -21,7 +21,7 @@ client.once('ready', () => {
 
 client.on('message', message => {
     if(!message.content.startsWith(prefix) || message.author.bot) return;
-    if(message.mentions.has(message.client.user)) {
+    if(message.mentions.has(client.user)) {
        message.channel.send('The prefix is ' + prefix);
     };
 
