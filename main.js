@@ -20,7 +20,7 @@ client.on('ready', () => {
 
 client.once('ready', () => {
     console.log('Michaels Bot is online!');
-    client.user.setActivity("Getting Developed", { type: 'LISTENING'}).catch(console.error);
+    client.user.setActivity("🥝My Prefix is '-'🥝", { type: 'PLAYING'}).catch(console.error);
     welcome(client)
 });
 
