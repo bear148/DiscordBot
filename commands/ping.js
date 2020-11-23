@@ -1,10 +1,10 @@
-const { DiscordAPIError } = require("discord.js")
+const Discord = require("discord.js")
 
 module.exports = {
     name: 'ping',
     description: "This is a ping command!",
     run: async(client, message, args) => {
-        message.channel.send(`🏓 Pinging...`).tehn((msg) => {
+        message.channel.send(`🏓 Pinging...`).then((msg) => {
             const _ = new Discord.MessageEmbed()
             .setTitle("Pong!")
             .setDescription(
