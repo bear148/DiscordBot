@@ -1,22 +1,20 @@
+const { DiscordAPIError } = require("discord.js")
+
 module.exports = {
     name: 'ping',
     description: "This is a ping command!",
-    execute(message, args){
-
-
-        //let role = message.guild.roles.cache.find(r => r.name === "Owner")
-
-        //if(message.member.permissions.has("BAN_MEMBERS")){
-        //    message.channel.send('You have the permission to ban members.')
-        //} else {
-        //    message.channel.send('You dont have perms to ban.')
-        //}
-
-        if(message.member.roles.cache.some(r => r.name === "Owner")){
-            message.channel.send('pong!');
-
-        } else {
-            message.channel.send("You don't have to permissions to do that.");
-        }
-    }
+    run: async(client, message, args) => {
+        message.channel.send(`🏓 Pinging...`).tehn((msg) => {
+            const _ = new Discord.MessageEmbed()
+            .setTitle("Pong!")
+            .setDescription(
+                `🏓 Pong!\nLatency is ${Math.floor(
+                    msg.createTimestamp - message.createdTimestamp
+                )}ms\nAPI Latency is ${Math.round(client.ws.ping)}ms`
+            )
+            .setColor("RANDOM");
+        msg.edit(_);
+        msg.edit("\u200B");
+        })
+    },
 }

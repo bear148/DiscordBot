@@ -29,7 +29,7 @@ client.on('message', message => {
     const command = args.shift().toLowerCase();
 
     if(command === 'ping') {
-        client.commands.get('ping').execute(message, args);
+        client.commands.get('ping').run(client, message, args);
     } else if (command == 'github') {
         client.commands.get('github').execute(message, args);
     } else if (command == 'command') {
