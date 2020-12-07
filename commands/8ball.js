@@ -32,6 +32,10 @@ module.exports = {
                 "No, but Milo does.",
                 "No, but Michael does.",
                 "No, but Collin does.",
+                "No, but Ian is.",
+                "No, but Roku is.",
+                "No, but Michael is.",
+                "No, but Collin is.",
                 "",
             ];
             let response =
