@@ -4,7 +4,7 @@ module.exports = {
     name: "eyebleach",
     description: "Get an image from r/eyebleach.",
     run: async (client, message, args) => {
-        let subreddits = ["eyebleach"];
+        let subreddits = ["eyebleach", "dogs", "cats"];
         let subreddit = subreddits[Math.floor(Math.random() * subreddits.length)];
         let img = await api(subreddit, true);
         const Embed = new MessageEmbed()
