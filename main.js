@@ -60,6 +60,8 @@ client.on('message', message => {
         client.commands.get('reddit').run(client, message, args);
     } else if (command == 'eyebleach') {
         client.commands.get('eyebleach').run(client, message, args);
+    } else if (command == 'milo') {
+        client.commands.get('milo').run(client, message, args);
     }
 });
 
