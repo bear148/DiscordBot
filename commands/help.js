@@ -1,4 +1,6 @@
-const { MessageEmbed } = require("discord.js")
+const Discord = require('discord.js');
+const { MessageEmbed, ClientUser } = require("discord.js")
+const client = new Discord.Client();
 
 module.exports = {
     name: 'help',
@@ -23,6 +25,6 @@ module.exports = {
             {name: '-milo', value: "Random command I created for a friend lol"}
         )
         .setFooter('This bot was coded by Michael Srenaski © 2020');
-        message.channel.send(newEmbed)
+        message.author.send(newEmbed);
     }
 }
